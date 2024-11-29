@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color : #fff;
+   
+   
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+ 
+}
+ 
+nav {  
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 73%;
+ 
+}
+ 
+nav a {
+    color : #0ee7f2;
+    text-decoration: none;
+}
+ 
+a:hover{
+    opacity: 0.4;
+    transition: 0.7s;
+}
+ 
+.global {
+    min-height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+ 
+main{
+    display: flex;
+    align-items: center;
+}
+ 
+#logo{
+width: 350px;
+height: 350px;
+}
+ 
+.entete {
+    background-color: rgb(165, 17, 233);
+    color:   #0ee7f2;
+ 
+}
+ 
+.heromots{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.hero__h1{
+    font-family:fantasy;
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+}
+ 
+.hero__footer{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    padding: 100px 0;
+}
+#menu{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    gap: 29px;
+    text-align: center;
+
+}
+#section-1 {
+   background-color: rgb(150, 0, 250);
+}
+#section-2 {
+    background-color: rgb(75, 1, 135);
+ }
+ #section-3 {
+    background-color: rgb(132, 0, 255);
+ }
+ #section-4 {
+    background-color: rgb(71, 4, 255);
+ }
+
+ #section-5 {
+    background-color:#7329fc ;
+ }
+ 
+ .pied{
+    background-color: #8b4dff;
+ }
+ #burger {
+    position : fixed;
+    top: 20px;
+    right: 20px;
+    border : 1px solid #aaa;
+    border-radius: 5px;
+}
+#menu{
+    position : fixed; 
+    top: 100px;
+    right: 20px;
+    border : 1px solid #00f;
+    background-color: #07235f;
+    color: #fff;
+    transition: transform .25s;
+    transform : translateX(225px);
+    width : 147px;
+    height: 404px;
+    padding : 10px;
+}  
+
+#chk-burger:checked + #menu {
+    transform : translateX(0);
+} 
+
+#menu a {
+    color : #fff;
+    display : block;
+}
+
+
+#chk-burger{
+    display : none;
+    width : 200px;
+    border : 2px solid #f00;
+    padding: 10px;
+}
